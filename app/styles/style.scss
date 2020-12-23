@@ -1,12 +1,57 @@
-.main{
-    height: 100px;
-    &-head{
-        width: auto;
-        &_lobok{
-            border: 1px solid green;
+body {
+    height: 1000px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-first{
+display: flex;
+justify-content: space-evenly;
+height: 80px;
+background-color: rgb(198, 236, 198);
+    .headerf{
+    height: 45px;
+    width: 200px;
+    margin-top: 16px;
+    background-color: rgb(245, 205, 130);
+    border: 2px solid red;
+    }
+    .logo-city-lang{
+        display: flex;
+        width: 500px;
+        justify-content: space-evenly;
+        margin-right: 190px;
+        margin-left: -20px;
+    }
+    .logo{
+        height: 45px;
+        width: 150px;
+        text-align: center;
+    }
+    .city, .lang, .phone{
+    height: 45px;
+    width: 120px;
+    margin-top: 16px;
+    text-align: center;
+    }
+    .icon-phone-button{
+        display: flex;  
+        width: 400px;
+        justify-content: space-evenly;
+        margin-left: 90px;
+        
+        .icon{
+            height: 45px;
+            width: 50px;
+            margin-top: 16px;   
+        }
+        .button{
+            width: 180px;
+            text-align: center;
         }
     }
 }
-h1{
-    color:red;
+.header-second{
+    height: 50px;
+    background-color: rgb(240, 247, 248);
 }
