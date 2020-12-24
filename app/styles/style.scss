@@ -8,13 +8,12 @@ body {
 display: flex;
 justify-content: space-evenly;
 height: 80px;
-background-color: rgb(198, 236, 198);
+background-color: rgb(255, 255, 255);
     .headerf{
     height: 45px;
     width: 200px;
     margin-top: 16px;
-    background-color: rgb(245, 205, 130);
-    border: 2px solid red;
+    // background-color: rgb(245, 205, 130);
     }
     .logo-city-lang{
         display: flex;
@@ -24,15 +23,62 @@ background-color: rgb(198, 236, 198);
         margin-left: -20px;
     }
     .logo{
+        display: flex;
         height: 45px;
         width: 150px;
+        
+        .one, .two, .three, .four{
+        border: 2px solid rgb(122, 120, 120);
+        width: 37px;
         text-align: center;
+        padding: 10px;
+        color:  rgb(99, 96, 96);
+        }
     }
-    .city, .lang, .phone{
+    .lang, .phone{
+    box-sizing: border-box;
     height: 45px;
     width: 120px;
     margin-top: 16px;
+    padding-top: 15px;
     text-align: center;
+    color:  rgb(99, 96, 96);
+
+    }
+    .city{
+        height: 45px;
+        width: 120px;
+        text-align: center;
+    }
+    .menu_city{
+        text-decoration: none;
+        list-style: none;
+        text-align: start;
+        margin-top: 15px;
+        height: 310px;
+        background-color: #fff;
+        display: none;
+        li{
+            padding-top: 28px;
+        }
+    }
+    .kiev{
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 11px;
+        display: block;
+        }
+    .city:hover .menu_city{
+        display: block;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(99, 96, 96);
+    }
+    a:hover{
+        color: red;
     }
     .icon-phone-button{
         display: flex;  
@@ -41,13 +87,16 @@ background-color: rgb(198, 236, 198);
         margin-left: 90px;
         
         .icon{
-            height: 45px;
-            width: 50px;
-            margin-top: 16px;   
+        height: 45px;
+        width: 50px;
+        margin-top: 16px;   
         }
         .button{
-            width: 180px;
-            text-align: center;
+            box-sizing: border-box;
+        width: 180px;
+        text-align: center;
+        color:rgb(99, 96, 96);
+        padding-top: 15px;
         }
     }
 }
