@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
@@ -17,7 +22,11 @@
             </div>
 
             <div class="headerf city">
-                <li class="kiev"><a href="#">Киев</a></li>
+                <div class="icon_city">
+                <span class="material-icons">location_on</span>
+                <li class="kiev"><a href="#">Киев</a></li>  
+                </div>
+                
                 <ul class="menu_city">
                     <li><a href="#">Львов</a></li>
                     <li><a href="#">Киев</a></li>
@@ -28,11 +37,17 @@
                 </ul>
             </div>
 
-            <div class="headerf lang">RU/UA/EN</div>
+            <div class="headerf lang">
+                <a class="ru" href="#">RU/</a>
+                <a class="ua" href="#">UA</a>/
+                <a class="en" href="#">EN</a>
+            </div>
         </div>
         <div class="icon-phone-button">
-            <div class="headerf icon"></div>
-            <div class="headerf phone">0 800212405</div>
+            <div class="headerf icon">
+                <span class="material-icons">local_phone</span>
+            </div>
+            <div class="headerf phone"><a>0 800212405</a></div>
             <div class="headerf button">Получить консультацию</div>
         </div>
     </div>

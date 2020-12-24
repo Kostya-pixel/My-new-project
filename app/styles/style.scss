@@ -1,14 +1,18 @@
+$fz : 14px;
+$col : #06224c;
 body {
+    font-family: 'Roboto', sans-serif;
+    font-size: $fz;
     height: 1000px;
     padding: 0px;
     margin: 0px;
 }
 
 .header-first{
-display: flex;
-justify-content: space-evenly;
-height: 80px;
-background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
     .headerf{
     height: 45px;
     width: 200px;
@@ -24,8 +28,8 @@ background-color: rgb(255, 255, 255);
     }
     .logo{
         display: flex;
-        height: 45px;
-        width: 150px;
+        height: 40px;
+        width: 145px;
         
         .one, .two, .three, .four{
         border: 2px solid rgb(122, 120, 120);
@@ -36,19 +40,37 @@ background-color: rgb(255, 255, 255);
         }
     }
     .lang, .phone{
-    box-sizing: border-box;
-    height: 45px;
-    width: 120px;
-    margin-top: 16px;
-    padding-top: 15px;
-    text-align: center;
-    color:  rgb(99, 96, 96);
-
+        height: 45px;
+        box-sizing: border-box;
+        width: 90px;
+        margin-top: 12px;
+        padding-top: 15px;
+        text-align: center;
+        color:  rgb(117, 116, 116);
+    }
+    .lang{
+        .ru{
+            color: $col;
+        }
+        & a{
+            color: rgb(144, 167, 211);
+        }
+    }
+    .ua:hover{
+        color: $col;
+    }
+    .en:hover{
+        color: $col;
     }
     .city{
         height: 45px;
         width: 120px;
         text-align: center;
+    }
+    .icon_city{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .menu_city{
         text-decoration: none;
@@ -87,17 +109,33 @@ background-color: rgb(255, 255, 255);
         margin-left: 90px;
         
         .icon{
-        height: 45px;
-        width: 50px;
-        margin-top: 16px;   
+        height: 25px;
+        width: 25px;
+        margin-top: 20px;
+        margin-left: -30px;
         }
         .button{
-            box-sizing: border-box;
-        width: 180px;
+        box-sizing: border-box;
+        width: 222px;
+        color: rgb(246, 248, 250);
         text-align: center;
-        color:rgb(99, 96, 96);
+        background-color: #899cb8;
         padding-top: 15px;
+        margin-top: 9px;
+        transition: all .3s linear;
+        &:hover{
+            background-color: rgb(240, 247, 248);
+            color: #899cb8;
         }
+        }
+    }
+    .phone{
+    margin-right: 70px;
+    }
+    .phone a:hover{
+        color: $col;
+        cursor: pointer;
+        text-decoration-line: underline;
     }
 }
 .header-second{
