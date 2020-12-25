@@ -1,5 +1,14 @@
 $fz : 14px;
 $col : #06224c;
+$navcol:#1e4159;
+$pointcol:#337ab7;
+* a{
+    text-decoration: none;
+    color: $navcol;
+    &:hover{
+        color: $pointcol;
+    }
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-size: $fz;
@@ -19,126 +28,289 @@ body {
     margin-top: 16px;
     // background-color: rgb(245, 205, 130);
     }
-    .logo-city-lang{
-        display: flex;
-        width: 500px;
-        justify-content: space-evenly;
-        margin-right: 190px;
-        margin-left: -20px;
-    }
-    .logo{
-        display: flex;
-        height: 40px;
-        width: 145px;
+.logo-city-lang{
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+    margin-right: 190px;
+    margin-left: -20px;
+}
+.logo{
+    display: flex;
+    height: 40px;
+    width: 145px;
         
-        .one, .two, .three, .four{
-        border: 2px solid rgb(122, 120, 120);
-        width: 37px;
-        text-align: center;
-        padding: 10px;
-        color:  rgb(99, 96, 96);
-        }
+    .logo_I, .logo_T, .logo_E, .logo_A{
+    border: 2px solid rgb(122, 120, 120);
+    width: 37px;
+    text-align: center;
+    padding: 10px;
+    color:  rgb(99, 96, 96);
     }
-    .lang, .phone{
-        height: 45px;
-        box-sizing: border-box;
-        width: 90px;
-        margin-top: 12px;
-        padding-top: 15px;
-        text-align: center;
-        color:  rgb(117, 116, 116);
     }
-    .lang{
-        .ru{
-            color: $col;
-        }
-        & a{
-            color: rgb(144, 167, 211);
-        }
+.lang, .phone{
+    height: 45px;
+    box-sizing: border-box;
+    width: 90px;
+    margin-top: 12px;
+    padding-top: 15px;
+    text-align: center;
+    color:  rgb(117, 116, 116);
     }
-    .ua:hover{
-        color: $col;
+.lang{
+    .ru{
+    color: $col;
     }
-    .en:hover{
-        color: $col;
+    & a{
+        color: rgb(144, 167, 211);
     }
-    .city{
-        height: 45px;
-        width: 120px;
-        text-align: center;
     }
-    .icon_city{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.ua:hover{
+    color: $col;
     }
-    .menu_city{
-        text-decoration: none;
-        list-style: none;
-        text-align: start;
-        margin-top: 15px;
-        height: 310px;
-        background-color: #fff;
-        display: none;
-        li{
-            padding-top: 28px;
-        }
+.en:hover{
+    color: $col;
     }
-    .kiev{
-        text-decoration: none;
-        list-style: none;
-        text-align: center;
-        margin-top: 0px;
-        padding-top: 11px;
-        display: block;
-        }
-    .city:hover .menu_city{
-        display: block;
+.city{
+    height: 45px;
+    width: 120px;
+    text-align: center;
+    position: relative;
     }
-    a{
-        text-decoration: none;
-        color: rgb(99, 96, 96);
+.icon_city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
-    a:hover{
-        color: red;
+.menu_city{
+    text-decoration: none;
+    list-style: none;
+    text-align: start;
+    margin-top: 15px;
+    height: 310px;
+    background-color: #fff;
+    display: none;
+li  {
+    padding-top: 28px;
     }
-    .icon-phone-button{
-        display: flex;  
-        width: 400px;
-        justify-content: space-evenly;
-        margin-left: 90px;
+    }
+.kiev{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 11px;
+    display: block;
+    }
+.city:hover .menu_city{
+    display: block;
+    }
+a   {
+    text-decoration: none;
+    color: rgb(99, 96, 96);
+    }
+a:hover{
+    color: red;
+    }
+.icon-phone-button{
+    display: flex;  
+    width: 400px;
+    justify-content: space-evenly;
+    margin-left: 90px;
         
-        .icon{
-        height: 25px;
-        width: 25px;
-        margin-top: 20px;
-        margin-left: -30px;
-        }
-        .button{
-        box-sizing: border-box;
-        width: 222px;
-        color: rgb(246, 248, 250);
-        text-align: center;
-        background-color: #899cb8;
-        padding-top: 15px;
-        margin-top: 9px;
-        transition: all .3s linear;
-        &:hover{
-            background-color: rgb(240, 247, 248);
-            color: #899cb8;
-        }
-        }
+.icon{
+    height: 25px;
+    width: 25px;
+    margin-top: 20px;
+    margin-left: -30px;
+    cursor: pointer;
     }
-    .phone{
+.button{
+    box-sizing: border-box;
+    width: 222px;
+    color: rgb(246, 248, 250);
+    text-align: center;
+    background-color: #899cb8;
+    padding-top: 15px;
+    margin-top: 9px;
+    transition: all .3s linear;
+    cursor: pointer;
+&:hover{
+    background-color: rgb(240, 247, 248);
+    color: #899cb8;
+    }
+    }
+    }
+.phone{
     margin-right: 70px;
     }
-    .phone a:hover{
-        color: $col;
-        cursor: pointer;
-        text-decoration-line: underline;
+.phone a:hover{
+    color: $col;
+    cursor: pointer;
+    text-decoration-line: underline;
     }
 }
 .header-second{
+    display: flex;
+    justify-content: start;
     height: 50px;
     background-color: rgb(240, 247, 248);
+
+.nav_menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1190px;
+
+.nav &{
+    box-sizing: border-box;
+    width: 1px;
+    }
+
+.itea {
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 25px;
+    padding-top: 25px;
+    height: 230px;
+    width: 170px;
+    color: $navcol;
+    background: rgb(240, 247, 248);
+
+& li{
+    padding-bottom: 15px;
+    }
+    display: none;  
+    }
+
+.itea:hover{
+    display: block;
+    }
+    }
+
+.one{
+    position: relative;
+    margin-left: 90px;
+    color: $navcol;
+    cursor: pointer;
+
+&:hover .itea{
+    display: block;
+    }
+
+&:hover{
+    color: $pointcol;
+    }
+    }
+
+.evening_courses{
+    position: absolute;
+    margin-left: -25px;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 25px;
+    padding-top: 25px;
+    height: 110px;
+    width: 130px;
+    color: $navcol;
+    background: rgb(240, 247, 248);
+
+& li{
+    padding-bottom: 15px;
+    }
+    display: none;
+    }
+.two{
+    color: $navcol;
+    cursor: pointer;
+&:hover .evening_courses{
+        display: block;
+    }
+&:hover{
+        color: $pointcol;
+    }
+}
+.day_courses{
+    position: absolute;
+    margin-left: -25px;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 25px;
+    padding-top: 25px;
+    height: 110px;
+    width: 130px;
+    color: $navcol;
+    background: rgb(240, 247, 248);
+& li{
+    padding-bottom: 15px;
+    }
+    display: none;
+}
+.three{
+    color: $navcol;
+    cursor: pointer;
+&:hover .day_courses{
+    display: block;
+    }
+&:hover{
+    color: $pointcol;
+    }
+}
+.services{
+    position: absolute;
+    margin-left: -25px;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 25px;
+    padding-top: 25px;
+    height: 140px;
+    width: 170px;
+    color: $navcol;
+    background: rgb(240, 247, 248);
+& li{
+    padding-bottom: 15px;
+    }
+    display: none;
+    }
+.four{
+    color: $navcol;
+    cursor: pointer;
+&:hover .services{
+    display: block;
+    }
+&:hover{
+    color: $pointcol;
+    }
+    }
+
+
+.btn_search{
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    height: 50px;
+    width: 216px;
+}
+.form-control{
+    margin-right: 1px;
+    height: 30px;
+    width: 150px;
+    margin-top: 7px;
+    border-radius: 5px;
+    // display: none;
+}
+.show-search{
+    cursor: pointer;
+    height: 30px;
+    margin-top: 9px;
+    background-color: rgb(240, 247, 248);
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: $fz;
+    // border: 2px solid blue;
+    
+}
+.show-search:hover .form-control{
+    display: block;
+    }
 }
