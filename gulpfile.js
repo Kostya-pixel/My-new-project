@@ -14,6 +14,11 @@ gulp.task('html', () =>
         .pipe(gulp.dest('./build'))                // перенос HTML в папку деплоя 
         .pipe(brSync.reload({ stream: true }))  // перезагрузка страницы 
 );
+gulp.task('js', () =>    
+    gulp.src('app/**/*.js')
+        .pipe(gulp.dest('./build'))                // перенос HTML в папку деплоя 
+        .pipe(brSync.reload({ stream: true }))  // перезагрузка страницы 
+);
 gulp.task('brSync', () => 
     brSync.init({
         server: {
@@ -24,7 +29,8 @@ gulp.task('brSync', () =>
 );
 gulp.task('watch', gulp.parallel('brSync', function() {
     gulp.watch('app/*.html', gulp.parallel('html'));
+    gulp.watch('app/*.js', gulp.parallel('js'));
     gulp.watch('app/styles/**/*.scss', gulp.parallel('sass'));
   }));
 
-gulp.task('start', gulp.parallel( 'html', 'sass','watch'));
+gulp.task('start', gulp.parallel( 'html', 'js', 'sass','watch'));
