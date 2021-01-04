@@ -5,9 +5,9 @@ $pointcol:#337ab7;
 * a{
     text-decoration: none;
     color: $navcol;
-    &:hover{
-        color: $pointcol;
-    }
+&:hover{
+    color: $pointcol;
+}
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -59,10 +59,9 @@ body {
 }
 }
 .close-window{
-   margin-left: 450px;
-   margin-top: 10px;
-   border-radius: 50%;
-   border: 1px solid red;
+    margin-left: 450px;
+    margin-top: 10px;
+    border-radius: 50%;
 &:hover{
     cursor: pointer;
     background: #dac4d6;
@@ -70,7 +69,6 @@ body {
     box-shadow: #899cb8;
 }
 }
-
 .header-first{
 	width: 100%;
     display: flex;
@@ -94,14 +92,14 @@ body {
     height: 40px;
     width: 145px;
         
-    .logo_I, .logo_T, .logo_E, .logo_A{
+.logo_I, .logo_T, .logo_E, .logo_A{
     border: 2px solid rgb(122, 120, 120);
     width: 37px;
     text-align: center;
     padding: 10px;
     color:  rgb(99, 96, 96);
-    }
-    }
+}
+}
 .lang, .phone{
     height: 45px;
     box-sizing: border-box;
@@ -110,33 +108,33 @@ body {
     padding-top: 15px;
     text-align: center;
     color:  rgb(117, 116, 116);
-    }
+}
 .lang{
-    .ru{
+.ru{
     color: $col;
-    }
+}
 & a{
-        color: rgb(144, 167, 211);
-    }
-    }
+    color: rgb(144, 167, 211);
+}
+}
 .ua:hover{
     color: $col;
-    }
+}
 .en:hover{
     color: $col;
-    }
+}
 .city{
     height: 45px;
     width: 120px;
     text-align: center;
     position: relative;
     z-index: 2;
-    }
+}
 .icon_city{
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
 .menu_city{
     text-decoration: none;
     list-style: none;
@@ -147,8 +145,8 @@ body {
     display: none;
 li  {
     padding-top: 28px;
-    }
-    }
+}
+}
 .kiev{
     text-decoration: none;
     list-style: none;
@@ -156,30 +154,29 @@ li  {
     margin-top: 0px;
     padding-top: 11px;
     display: block;
-    }
+}
 .city:hover .menu_city{
     display: block;
-    }
+}
 a   {
     text-decoration: none;
     color: rgb(99, 96, 96);
-    }
+}
 a:hover{
     color: red;
-    }
+}
 .icon-phone-button{
     display: flex;  
     width: 400px;
     justify-content: space-evenly;
-    margin-left: 90px;
-        
+    margin-left: 90px;    
 .icon{
     height: 25px;
     width: 25px;
     margin-top: 20px;
     margin-left: -30px;
     cursor: pointer;
-    }
+}
 .button{
     box-sizing: border-box;
     width: 222px;
@@ -193,21 +190,20 @@ a:hover{
 &:hover{
     background-color: rgb(240, 247, 248);
     color: #899cb8;
-    }
-    }
-    }
+}
+}
+}
 .phone{
     margin-right: 70px;
-    }
+}
 .phone a:hover{
     color: $col;
     cursor: pointer;
     text-decoration-line: underline;
-    }
+}
 }
 .header-second{
 	width: 100%;
-	// transition: all .3s ease;
     display: flex;
     justify-content: start;
     height: 50px;
@@ -222,8 +218,7 @@ a:hover{
 .nav &{
     box-sizing: border-box;
     width: 1px;
-    }
-
+}
 .itea {
     position: absolute;
     text-decoration: none;
@@ -234,33 +229,27 @@ a:hover{
     width: 170px;
     color: $navcol;
     background: rgb(240, 247, 248);
-
 & li{
     padding-bottom: 15px;
-    }
+}
     display: none;  
-    }
-
+}
 .itea:hover{
     display: block;
-    }
-    }
-
+}
+}
 .one{
     position: relative;
     margin-left: 90px;
     color: $navcol;
     cursor: pointer;
-
 &:hover .itea{
     display: block;
-    }
-
+}
 &:hover{
     color: $pointcol;
-    }
-    }
-
+}
+}
 .evening_courses{
     position: absolute;
     margin-left: -25px;
@@ -275,18 +264,18 @@ a:hover{
 
 & li{
     padding-bottom: 15px;
-    }
+}
     display: none;
-    }
+}
 .two{
     color: $navcol;
     cursor: pointer;
 &:hover .evening_courses{
-        display: block;
-    }
+    display: block;
+}
 &:hover{
-        color: $pointcol;
-    }
+    color: $pointcol;
+}
 }
 .day_courses{
     position: absolute;
@@ -301,7 +290,7 @@ a:hover{
     background: rgb(240, 247, 248);
 & li{
     padding-bottom: 15px;
-    }
+}
     display: none;
 }
 .three{
@@ -309,10 +298,10 @@ a:hover{
     cursor: pointer;
 &:hover .day_courses{
     display: block;
-    }
+}
 &:hover{
     color: $pointcol;
-    }
+}
 }
 .services{
     position: absolute;
@@ -327,9 +316,9 @@ a:hover{
     background: rgb(240, 247, 248);
 & li{
     padding-bottom: 15px;
-    }
+}
     display: none;
-    }
+}
 .four{
     color: $navcol;
     cursor: pointer;
@@ -338,8 +327,8 @@ a:hover{
     }
 &:hover{
     color: $pointcol;
-    }
-    }
+}
+}
 
 
 .btn_search{
@@ -355,7 +344,6 @@ a:hover{
     width: 150px;
     margin-top: 7px;
     border-radius: 5px;
-    // display: none;
 }
 .show-search{
     cursor: pointer;
@@ -365,12 +353,10 @@ a:hover{
     border: none;
     font-family: 'Roboto', sans-serif;
     font-size: $fz;
-    // border: 2px solid blue;
-    
 }
 .show-search:hover .form-control{
     display: block;
-    }
+}
 }
 .img_bgrd{
     box-sizing: border-box;
@@ -378,13 +364,11 @@ a:hover{
     display: flex;
     max-width: 100%;
     height: 700px;
-    border: 1px solid red;
-    
 img{
     width: 100%;
     height: 700px;
     background-repeat: no-repeat; 
-    }
+}
 }
 .heading{
     position: absolute;
@@ -421,15 +405,12 @@ img{
     margin-top: 200px;
     width: 1250px;
     height: 822px;
-    // border: 2px solid green;
 }
 .line_java{
     display: flex;
     justify-content: center;
-    // border: 2px solid red;
     height: 170px;
 }
-
 .line_one{
     display: flex;
     justify-content: center;
@@ -441,25 +422,24 @@ img{
     margin-left: 50px;
     margin-right: 50px;
     cursor: pointer;
-    & img{
+& img{
     position: absolute;
     width: 100px;
     height: 100px;
     border: 6px solid #23527c;
     border-radius: 50%;
-    &:hover{
+&:hover{
     height: 85px;
-    }
-    }
-    & h3, span{
+}
+}
+& h3, span{
     box-sizing: border-box;
     text-align: center;
     font-size: 20px;
     color: rgb(0, 0, 0);
     font-weight: bold;
     margin-top: 180px;
-    // border: 2px solid green;
-    }
+}
 }
 .line_csharp{
     display: flex;
@@ -467,7 +447,6 @@ img{
     height: 170px;
     width: 1200px;
     margin-top: -322px;
-    // border: 2px solid red;
 }
 .line_two{
     display: flex;
@@ -478,7 +457,7 @@ img{
     width: 100px;
     height: 100px;
     cursor: pointer;
-    & img{
+& img{
     position: absolute;
     width: 100px;
     height: 100px;
@@ -496,7 +475,6 @@ h3{
     color: rgb(0, 0, 0);
     font-weight: bold;
     margin-top: 180px;
-    // border: 2px solid green;
     width: 350px;
     }
 
@@ -506,16 +484,13 @@ h3{
     max-width: 100%;
     height: 500px;
     background-color: #D9E2EB;
-    // font-size: $fz;
     font-family: 'Roboto', sans-serif;
-    // border: 2px solid red;
 }
 .footer-left-block{
     position: relative;
     display: flex;
     width: 40%;
     height: 100%;
-    // border: 3px solid rgb(9, 157, 226);
 .day-cource, .evening-cource{
     box-sizing: border-box;
     text-decoration: none;
@@ -542,12 +517,10 @@ h3{
     }
     width: 50%;
     height: 100%;
-    // border: 2px solid rgb(202, 7, 144);
 }
 .evening-cource{
     width: 50%;
     height: 100%;
-    // border: 2px solid rgb(46, 202, 7);
 }
 }
 .footer-right-block{
@@ -556,7 +529,6 @@ h3{
     flex-direction:column;
     width: 40%;
     height: 100%;
-    // border: 2px solid rgb(196, 230, 6);
 }
 .sub-form-title, .sub-form-discription{
     font-size: 18px;
